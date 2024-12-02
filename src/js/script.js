@@ -1,11 +1,16 @@
 // *** LIGHTBOX ***
-const LightBoxImg = document.createElement("#Lightbox img").querySelectorAll("[data-full-img]").forEach ((imgThumb)=>{
+
+const LightBoxImg = document.querySelector("#Lightbox img");
+const LightBox = document.querySelector("#Lightbox");
+
+
+document.querySelectorAll("[data-full-img]").forEach ((imgThumb)=>{
     imgThumb.addEventListener("click", (evt)=>{
         LightBoxImg.src = imgThumb.dataset.fullImg;
+        LightBox.showModal();
     });
 }); 
 
-lightBox.showModal (); 
-lightBox.close ();
+LightBoxImg.addEventListener("click", ()=> LightBoxImg.close ()); 
 
 
