@@ -1,10 +1,25 @@
 /**
 * Lightbox
 */
-.lightbox [open] {
-   background-color: pink;
+dialog#Lightbox {
+    position: fixed;
+    border-radius : 15px;
+    border-color: blue;
+    border-width: 10px;
+    background-color: #ccc;
 
 }
-::backdrop {
-   background-color: red; 
+
+#lightbox::backdrop {
+    content: 'X';
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background-color: rgba(154, 124, 124, 0.8);
+    width: 100%;
+    height: 100%;
+}
+.lightbox [open] {
+    display: block;
+    background-color: ;
 }
