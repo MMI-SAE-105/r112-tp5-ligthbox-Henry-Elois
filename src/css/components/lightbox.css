@@ -34,7 +34,7 @@ dialog#lightbox[open] {
 
 
 dialog#lightbox[open].sortie {
-    animation: sortie 2s;
+    animation: sortie 1s;
 }
 
 @keyframes sortie {
