@@ -19,7 +19,8 @@ dialog#Lightbox {
     width: 100%;
     height: 100%;
 }
-.lightbox [open] {
-    display: block;
-    background-color: ;
+
+.lightbox {
+    display: none;
+    animation: ease-in-out;
 }
